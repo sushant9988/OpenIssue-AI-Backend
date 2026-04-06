@@ -49,7 +49,7 @@ app.post('/api/analyze', async (req, res) => {
 
         if (!aiResult.is_duplicate) {
             database.push(issueText);
-        }a
+        }
 
         res.json({ status: "success", analysis: aiResult });
     } catch (error) {
