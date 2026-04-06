@@ -37,7 +37,7 @@ app.post('/api/analyze', async (req, res) => {
         `;
 
         const response = await openai.chat.completions.create({
-            model: "openai/gpt-3.5-turbo",
+            model: "google/gemini-pro",
             messages: [{ role: "user", content: prompt }],
             temperature: 0.2, 
         });
